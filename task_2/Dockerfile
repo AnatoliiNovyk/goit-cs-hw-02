@@ -4,6 +4,9 @@ FROM python:3.10-slim
 # Встановлюємо робочу директорію
 WORKDIR /app
 
+# Оновлюємо pip
+RUN pip install --upgrade pip
+
 # Копіюємо файл залежностей
 COPY requirements.txt .
 
